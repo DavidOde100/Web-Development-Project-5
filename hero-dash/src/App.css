@@ -1,42 +1,136 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Additional CSS styles for App */
+.app-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-title {
+  font-size: 32px;
+  color: #e12626;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input, .category-select, .min-power-input, .max-power-input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 220px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus, .category-select:focus, .min-power-input:focus, .max-power-input:focus {
+  outline: none;
+  border-color: #e12626; /* Highlight the input on focus */
+}
+
+.heroes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hero-item {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #000000;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-item:hover {
+  background-color: #b40d0d;
+  transform: scale(1.02);
+}
+
+.hero-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.hero-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+.hero-item img {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Hover effect for hero items */
+.hero-item:hover {
+  background-color: #c70d0d;
+}
+
+/* Additional CSS for advanced effects */
+
+/* Pulse animation for the app title */
+.app-title {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* Add a subtle background gradient to the app container */
+.app-container {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+}
+
+/* Add a neon glow effect to the search input */
+.search-input {
+  box-shadow: 0 0 5px rgba(225, 38, 38, 0.5);
+}
+
+/* Rotate the hero items on hover */
+.hero-item:hover {
+  transform: scale(1.02) rotate(3deg);
+}
+
+/* Add a subtle pulsating effect to hero items on hover */
+.hero-item:hover {
+  animation: pulseHero 0.5s infinite;
+}
+
+@keyframes pulseHero {
+  0% {
+    transform: scale(1.02) rotate(3deg);
+  }
+  50% {
+    transform: scale(1.02) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1.02) rotate(3deg);
   }
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}

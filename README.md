@@ -1,6 +1,6 @@
-# Web Development Project 5 - *Name of App Here*
+# Web Development Project 5 - *Hero Dash*
 
-Submitted by: **Your Name Here**
+Submitted by: **David Odejimi**
 
 This web app: **insert description**
 
