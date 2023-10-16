@@ -78,7 +78,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="app-title">Marvel Comics Heroes</h1>
+      <h1 className="app-title">Hero Dash</h1>
       <div className="filter-container">
         <input
           type="text"
