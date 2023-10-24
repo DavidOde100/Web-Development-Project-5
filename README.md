@@ -1,4 +1,4 @@
-# Web Development Project 5 - *Hero Dash*
+# Web Development Project 2 - *Hero Dash2*
 
 Submitted by: **David Odejimi**
 
@@ -10,18 +10,15 @@ Time spent: **6** hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [ ] *insert details*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [ ] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [ ] **Clicking on an item in the list view displays more details about it**
+- [ ] **Clicking on an item has a direct, unique link to that item's detail view page**
+
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously
-- [x] Filters use different input types such as a text input, a selection, or a slider
-- [x] The user can enter specific bounds for filter values
+- [ ] The site's customized dashboard contains more content that explains what is interesting about the data
+- [ ] The site allows users to toggle between different data visualizations
 
 The following **additional** features are implemented:
 
